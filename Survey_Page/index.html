@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Survey Form</h1>
+            <p id="description" class="description text-center">
+                We value your feedback and want to enhance your experience.
+            </p>
+        </header>
+        <!-- <h1 id="title"><span class="title-text">Survey Form</span></h1>
+        <p id="description">
+           <span class="title-text"> We value your feedback and want to enhance your experience.</span>
+        </p> -->
+        <main>
+            <form id="survey-form" action="">
+                <div class="mb-3">
+                    <label for="name" id="name-label" class="form-label">Name</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" id="email-label" class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter your E-mail">
+                </div>
+                <div class="mb-3">
+                    <label for="number" id="number-label" class="form-label">Age</label>
+                    <input type="number" name="age" class="form-control" id="number" min="10" max="100"
+                        placeholder="age">
+                </div>
+                <div class="mb-3">
+                    <p>Which option best describes your current role?</p>
+                    <select name="role" id="dropdown" class="form-control" required>
+                        <option disabled selected value>Please select your current role</option>
+                        <option value="freelancer">Freelancer</option>
+                        <option value="parttime">Part time</option>
+                        <option value="fulltime">Full time</option>
+                        <option value="selfemployed">Self employed</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <p>Would you be avilable for next two year?</p>
+                    <label class="form-label">
+                        <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                            checked>Definitely</label>
+                    <label>
+                        <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+                </div>
+                <div class="mb-3">
+                    <p>Which option best describes your current level in development?</p>
+                    <select name="role" id="dropdown" class="form-control" required>
+                        <option disabled selected value>Please select your current level</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                        <option value="expert">Expert</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>
+                        How would you like to serve best to organization?
+                        <span class="clue">(Check all that apply)</span>
+                    </p>
+                    <label class="form-label"><input name="prefer" value="leadership-and-Teamwork" type="checkbox"
+                            class="input-checkbox">Leadership and Teamwork</label>
+                    <label class="form-label">
+                        <input name="prefer" value="job-Performance-Improvement" type="checkbox"
+                            class="input-checkbox">Job Performance Improvement</label>
+                    <label class="form-label"><input name="prefer" value="innovation-and-Creativity" type="checkbox"
+                            class="input-checkbox">Innovation and Creativity</label>
+                    <label class="form-label"><input name="prefer" value="productivity-and-efficiency" type="checkbox"
+                            class="input-checkbox">Productivity and Efficiency</label>
+                    <label class="form-label"><input name="prefer" value="professional-developmen" type="checkbox"
+                            class="input-checkbox">Professional Developmen</label>
+                    <label class="form-label"><input name="prefer" value="customer-satisfaction" type="checkbox"
+                            class="input-checkbox">Customer Satisfaction</label>
+                </div>
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea id="comments" class="input-textarea" name="comment"
+                        placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
