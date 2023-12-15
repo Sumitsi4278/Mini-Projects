@@ -1,0 +1,80 @@
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 90%;
+    width: 30%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container h2{
+    border-bottom: 2px solid black;
+}
+.input-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-btn input {
+    width: 70%;
+    padding: 5px;
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+
+.input-btn button {
+   min-width: 15%;
+    padding: 5px;
+    
+}
+
+.todolist{
+    display: inline-block;
+    align-items: center;
+    width: 90%;
+    margin-top: 20px;
+    height: calc(100% - 140px);
+    border: 1px solid black;
+    overflow: auto;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid black;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.sec-A{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+}
+
+.sec-A ol {
+    margin-left: 5px;
+    padding: 0px;
+    list-style: none;
+}
+
+.sec-B{
+    width: 30%;
+    margin-left: 10px;
+}
+
+.sec-B span{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.checked{
+    text-decoration: line-through;
+}
